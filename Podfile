@@ -13,8 +13,4 @@ target 'Quarantine' do
     # Pods for testing
   end
 
-  target 'QuarantineUITests' do
-    # Pods for testing
-  end
-
 end

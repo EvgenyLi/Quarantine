@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AED13351C0430E9FBE60B6E /* Pods_QuarantineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59455953B4CF8A0F282B8486 /* Pods_QuarantineTests.framework */; };
+		56DD783F00BBADEF2164CFD0 /* Pods_Quarantine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DFC42C8C9505AA2C7BD0D5 /* Pods_Quarantine.framework */; };
 		C2CC0B362471D3CF00782F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC0B352471D3CF00782F3F /* AppDelegate.swift */; };
 		C2CC0B382471D3CF00782F3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC0B372471D3CF00782F3F /* SceneDelegate.swift */; };
 		C2CC0B3A2471D3CF00782F3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC0B392471D3CF00782F3F /* ViewController.swift */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B470689D258B3FF2C7C4021 /* Pods-Quarantine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quarantine.debug.xcconfig"; path = "Target Support Files/Pods-Quarantine/Pods-Quarantine.debug.xcconfig"; sourceTree = "<group>"; };
+		54AF3D50054F08B7125B5C99 /* Pods-Quarantine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quarantine.release.xcconfig"; path = "Target Support Files/Pods-Quarantine/Pods-Quarantine.release.xcconfig"; sourceTree = "<group>"; };
+		59455953B4CF8A0F282B8486 /* Pods_QuarantineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuarantineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD787B47D23380F00E8EDDA /* Pods-QuarantineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuarantineTests.debug.xcconfig"; path = "Target Support Files/Pods-QuarantineTests/Pods-QuarantineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2CC0B322471D3CF00782F3F /* Quarantine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quarantine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC0B352471D3CF00782F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2CC0B372471D3CF00782F3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		C2CC0B532471D3D100782F3F /* QuarantineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuarantineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC0B572471D3D100782F3F /* QuarantineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarantineUITests.swift; sourceTree = "<group>"; };
 		C2CC0B592471D3D100782F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5DFC42C8C9505AA2C7BD0D5 /* Pods_Quarantine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quarantine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAC69B0F2623239E38FFFDC /* Pods-QuarantineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuarantineTests.release.xcconfig"; path = "Target Support Files/Pods-QuarantineTests/Pods-QuarantineTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DD783F00BBADEF2164CFD0 /* Pods_Quarantine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AED13351C0430E9FBE60B6E /* Pods_QuarantineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3444792893DC557C3386DBF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B470689D258B3FF2C7C4021 /* Pods-Quarantine.debug.xcconfig */,
+				54AF3D50054F08B7125B5C99 /* Pods-Quarantine.release.xcconfig */,
+				5DD787B47D23380F00E8EDDA /* Pods-QuarantineTests.debug.xcconfig */,
+				FBAC69B0F2623239E38FFFDC /* Pods-QuarantineTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		602DCF648BE189C97D49EB58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5DFC42C8C9505AA2C7BD0D5 /* Pods_Quarantine.framework */,
+				59455953B4CF8A0F282B8486 /* Pods_QuarantineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2CC0B292471D3CF00782F3F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,8 @@
 				C2CC0B4B2471D3D100782F3F /* QuarantineTests */,
 				C2CC0B562471D3D100782F3F /* QuarantineUITests */,
 				C2CC0B332471D3CF00782F3F /* Products */,
+				3444792893DC557C3386DBF2 /* Pods */,
+				602DCF648BE189C97D49EB58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2CC0B5C2471D3D100782F3F /* Build configuration list for PBXNativeTarget "Quarantine" */;
 			buildPhases = (
+				4BBFFFE3AEA7E47DFD818DEB /* [CP] Check Pods Manifest.lock */,
 				C2CC0B2E2471D3CF00782F3F /* Sources */,
 				C2CC0B2F2471D3CF00782F3F /* Frameworks */,
 				C2CC0B302471D3CF00782F3F /* Resources */,
+				B05E85CCD68F5BA60F568B9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2CC0B5F2471D3D100782F3F /* Build configuration list for PBXNativeTarget "QuarantineTests" */;
 			buildPhases = (
+				BC57F282BAE266765D6CB8DA /* [CP] Check Pods Manifest.lock */,
 				C2CC0B442471D3D100782F3F /* Sources */,
 				C2CC0B452471D3D100782F3F /* Frameworks */,
 				C2CC0B462471D3D100782F3F /* Resources */,
@@ -253,6 +289,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BBFFFE3AEA7E47DFD818DEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quarantine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05E85CCD68F5BA60F568B9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quarantine/Pods-Quarantine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quarantine/Pods-Quarantine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quarantine/Pods-Quarantine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC57F282BAE266765D6CB8DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuarantineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2CC0B2E2471D3CF00782F3F /* Sources */ = {
@@ -432,6 +532,7 @@
 		};
 		C2CC0B5D2471D3D100782F3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B470689D258B3FF2C7C4021 /* Pods-Quarantine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +551,7 @@
 		};
 		C2CC0B5E2471D3D100782F3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54AF3D50054F08B7125B5C99 /* Pods-Quarantine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +570,7 @@
 		};
 		C2CC0B602471D3D100782F3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD787B47D23380F00E8EDDA /* Pods-QuarantineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +593,7 @@
 		};
 		C2CC0B612471D3D100782F3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBAC69B0F2623239E38FFFDC /* Pods-QuarantineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

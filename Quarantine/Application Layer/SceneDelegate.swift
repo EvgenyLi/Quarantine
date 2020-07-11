@@ -11,7 +11,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var appCoordinator: AppCoordinator?
+    var appCoordinator: Coordinator?
+    let appFactory: AppFactory = Di()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,8 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
         
-        appCoordinator = AppCoordinator(window: window!)
-        appCoordinator?.start()
+        let coordinator = appFactory.makeKeyWindowWithCoordinator(window: window!)
+        self.appCoordinator = coordinator
+        coordinator.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

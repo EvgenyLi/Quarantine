@@ -27,13 +27,7 @@ class LoginViewController: UIViewController, ModuleView {
         Disposables.create()
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-    }
-    
     // MARK: Private
-    
     private let _bag = DisposeBag()
     private let loginButton: UIButton = {
         let bt = UIButton(frame: CGRect(x: 100, y: 300, width: 100, height: 50))

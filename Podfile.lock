@@ -164,6 +164,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
+  - Differentiator (4.0.1)
   - Firebase/Auth (6.16.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.4.3)
@@ -248,6 +249,10 @@ PODS:
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
@@ -256,12 +261,14 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - RxCocoa (~> 5)
+  - RxDataSources (~> 4.0)
   - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
     - abseil
     - BoringSSL-GRPC
+    - Differentiator
     - Firebase
     - FirebaseAuth
     - FirebaseAuthInterop
@@ -278,12 +285,14 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - RxCocoa
+    - RxDataSources
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Firebase: 497158b816d0a86fc31babbd05546fcd7e6083ff
   FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
   FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
@@ -300,9 +309,10 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: a11e7400abb51077d06e75980b650902134392f6
+PODFILE CHECKSUM: 2ac7a33e5424670e4ab70f0aa0e69c57fae8a627
 
 COCOAPODS: 1.8.4

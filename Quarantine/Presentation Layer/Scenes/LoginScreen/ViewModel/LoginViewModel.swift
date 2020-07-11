@@ -11,6 +11,12 @@ import RxSwift
 
 final class LoginViewModel: ModuleViewModel {
     
+    private let _coordinator: LoginCoordinator
+    
+    init(coordinator: LoginCoordinator) {
+        _coordinator = coordinator
+    }
+    
     struct Input {
         let loginTap: Signal<Void>
     }
@@ -19,7 +25,7 @@ final class LoginViewModel: ModuleViewModel {
         return Disposables.create([
             input.loginTap.asObservable()
             .subscribe(onNext: { _ in
-                print("TEST")
+                self._coordinator.pushMainScene()
             })
         ])
     }

@@ -14,9 +14,15 @@ import RxCocoa
 final class AppCoordinator: Coordinator {
 
     let window: UIWindow
+    private let _sceneFactory: SceneFactory
+    private let _isUserLoggedIn: Bool
     
-    init(window: UIWindow) {
+    init(window: UIWindow,
+         sceneFactory: SceneFactory,
+         isUserLoggedIn: Bool) {
         self.window = window
+        self._sceneFactory = sceneFactory
+        self._isUserLoggedIn = isUserLoggedIn
     }
     
        func start() {
@@ -24,11 +30,27 @@ final class AppCoordinator: Coordinator {
            if #available(iOS 13.0, *) {
                navigationController.overrideUserInterfaceStyle = .light
            }
-           window.rootViewController = navigationController
-           window.makeKeyAndVisible()
+        navigationController.navigationBar.prefersLargeTitles = true
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
         
-        let loginCoordinator = LoginCoordinator(navigationController: navigationController)
-        coordinate(to: loginCoordinator)
+        if _isUserLoggedIn {
+            mainFlow(navigationController: navigationController)
+        } else {
+            loginFlow(navigationController: navigationController)
+        }
 
        }
+    
+    private func mainFlow(navigationController: UINavigationController) {
+        let mainCoordinator = MainCoordinator(navigationController: navigationController,
+        sceneFactory: _sceneFactory)
+        coordinate(to: mainCoordinator)
+    }
+    
+    private func loginFlow(navigationController: UINavigationController) {
+        let loginCoordinator = LoginCoordinator(navigationController: navigationController,
+        sceneFactory: _sceneFactory)
+        coordinate(to: loginCoordinator)
+    }
 }

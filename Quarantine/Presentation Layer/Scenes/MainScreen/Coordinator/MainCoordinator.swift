@@ -1,14 +1,13 @@
 //
-//  LoginCoordinator.swift
+//  MainCoordinator.swift
 //  Quarantine
 //
 //  Created by Lipadat Evgeniy on 04.06.2020.
 //  Copyright © 2020 Lipadat Evgeniy. All rights reserved.
 //
-
 import UIKit
 
-final class LoginCoordinator: Coordinator {
+final class MainCoordinator: Coordinator {
     
     unowned let navigationController: UINavigationController
     private let _sceneFactory: SceneFactory
@@ -20,12 +19,9 @@ final class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        let loginViewController = _sceneFactory.makeLoginScene(coordinator: self)
-        navigationController.setViewControllers([loginViewController], animated: true)
+        let mainViewController = _sceneFactory.makeMainScene()
+        navigationController.pushViewController(mainViewController, animated: true)
     }
     
-    func pushMainScene() {
-        let mainViewController = _sceneFactory.makeMainScene()
-        navigationController.setViewControllers([mainViewController], animated: true)
-    }
+    
 }

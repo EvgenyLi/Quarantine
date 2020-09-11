@@ -30,18 +30,31 @@ class MainViewModel: ModuleViewModel {
     private func _configureDataSource() {
         
         let sections: [SectionModel] = [
-            .ImageProvidableSection(title: "Section 1",
-                items: [.ImageSectionItem(image: UIImage(named: "test")!, title: "General")]),
-            .ToggleableSection(title: "Section 2",
-                items: [.ToggleableSectionItem(title: "On", enabled: true)]),
-            .StepperableSection(title: "Section 3",
-                items: [.StepperSectionItem(title: "1")])
+            .ImageProvidableSection(title: "Категория 1",
+                                    items: [.first(items: [
+                                        .init(image: UIImage(named: "123.jpg"), title: "Текст"),
+                                        .init(image: UIImage(named: "123.jpg"), title: "Текст"),
+                                        .init(image: UIImage(named: "123.jpg"), title: "Текст"),
+                                        .init(image: UIImage(named: "123.jpg"), title: "Текст"),
+                                        .init(image: UIImage(named: "123.jpg"), title: "Текст"),
+                                        .init(image: UIImage(named: "123.jpg"), title: "Текст")
+                                    ])]),
+            .ToggleableSection(title: "Категория 2",
+                               items: [.second(items: [.init(image: UIImage(named: "123.jpg"), title: "Текст 2")])]),
+            .StepperableSection(title: "Категория 3",
+                                items: [.third(items: [.init(image: UIImage(named: "123.jpg"), title: "Текст3")])])
         ]
         self.dataSource.accept(sections)
     }
 }
 
 extension MainViewModel {
+    
+    struct EventItems {
+        let image: UIImage?
+        let title: String
+    }
+    
     enum SectionModel {
         case ImageProvidableSection(title: String, items: [SectionItem])
         case ToggleableSection(title: String, items: [SectionItem])
@@ -49,9 +62,9 @@ extension MainViewModel {
     }
 
     enum SectionItem {
-        case ImageSectionItem(image: UIImage, title: String)
-        case ToggleableSectionItem(title: String, enabled: Bool)
-        case StepperSectionItem(title: String)
+        case first(items: [EventItems])
+        case second(items: [EventItems])
+        case third(items: [EventItems])
     }
 }
 
@@ -62,11 +75,11 @@ extension MainViewModel.SectionModel: SectionModelType {
     var items: [MainViewModel.SectionItem] {
         switch  self {
         case .ImageProvidableSection(title: _, items: let items):
-            return items.map { $0 }
+            return items
         case .StepperableSection(title: _, items: let items):
-            return items.map { $0 }
+            return items
         case .ToggleableSection(title: _, items: let items):
-            return items.map { $0 }
+            return items
         }
     }
     

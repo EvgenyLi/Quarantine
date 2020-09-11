@@ -8,6 +8,7 @@ target 'Quarantine' do
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
     pod 'RxDataSources', '~> 4.0'
+    pod 'ReactorKit'
 
   target 'QuarantineTests' do
     inherit! :search_paths

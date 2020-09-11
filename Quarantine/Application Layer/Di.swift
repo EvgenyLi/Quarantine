@@ -21,6 +21,8 @@ protocol SceneFactory {
     func makeLoginScene(coordinator: LoginCoordinator) -> LoginViewController
 }
 
+// MARK: - SceneFactory
+
 final class SceneFactoryImp: SceneFactory {
     func makeLoginScene(coordinator: LoginCoordinator) -> LoginViewController {
         let loginViewController = LoginViewController()
@@ -39,8 +41,6 @@ final class SceneFactoryImp: SceneFactory {
         mainViewController.bind(to: mainViewModel)
         return mainViewController
     }
-    
-    
 }
 
 protocol AppFactory {
@@ -51,7 +51,7 @@ extension Di: AppFactory {
     func makeKeyWindowWithCoordinator(window: UIWindow) -> Coordinator {
             let cooridnator = AppCoordinator(window: window,
                                              sceneFactory: _sceneFactory,
-                                             isUserLoggedIn: false)
+                                             isUserLoggedIn: true)
             return cooridnator
         }
 
